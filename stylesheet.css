@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/* Template & Designed by Towako. */
+/* https://ninawas.me */
+
+/* ウェブフォントの読み込み */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
+
+@font-face {
+    font-family: 'XANO明朝';
+    font-display: swap;
+    src: url('https://cdn.leafscape.be/XANO-mincho/XANO-mincho_web.woff2') format("woff2");
+}
+
+/*-------------------------------------------------
+このフォントはIPAフォントライセンスv1.0の下で提供されています。
+http://ipafont.ipa.go.jp/ipa_font_license_v1.html
+オリジナルのフォントは以下から取得できます。
+http://ipafont.ipa.go.jp/
+-------------------------------------------------*/
+
+
+
+/* 全体に適用する */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* 基本設定 */
+body {
+    text-align: center;
+    background: url('背景画像URL') top center;
+    background-size: 400px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    color: #000;
+}
+
+/* リンク */
+a {
+    text-decoration: none;
+    color: #043c78;
+}
+
+/* コンテナ */
+#headerwrap {
+    margin: 0 auto;
+    padding: 5em 0;
+    background-color: #043c78;
+    color: #fff;
+}
+
+/* ヘッダー */
+header {
+    position: relative;
+}
+
+/* 画像 */
+header img {
+    width: 330px;
+    height: auto;
+}
+
+/* 見出し */
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-color: rgba(4, 60, 120, 0.7);
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    font-size: 1.5em;
+}
+
+header h1 span {
+    font-family: 'Noto Serif JP';
+    color: #fff;
+}
+
+header h1 span:nth-of-type(1) {
+    animation: FadeIn 2s;
+}
+
+header h1 span:nth-of-type(2) {
+    animation: FadeIn 3s;
+}
+
+header h1 span:nth-of-type(3) {
+    animation: FadeIn 4s;
+}
+
+header h1 span:nth-of-type(4) {
+    animation: FadeIn 5s;
+}
+
+/* 折り畳みボックス */
+#AboutToggle {
+    margin-top: 1em;
+}
+
+/* 折り畳みボックス段落 */
+#About p {
+    margin: 1em auto 1.5em;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* 文字揃え */
+#About p,
+section,
+article {
+    text-align: justify;
+    word-break: break-all;
+}
+
+/* メインコンテンツ */
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* セクション */
+section {
+    margin: 3em auto;
+    padding: 2em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: -3px -3px 3px #f6f6f6 inset, 3px 3px 3px #f6f6f6 inset;
+}
+
+/* 見出し */
+section h2 {
+    margin: 0.5em auto 1em;
+    letter-spacing: 0.3em;
+    font-family: 'Noto Serif JP';
+    font-size: 1.3em;
+}
+
+/* 見出し画像 */
+section h2 img {
+    margin-right: 0.5em;
+    width: 30px;
+    height: auto;
+    vertical-align: text-bottom;
+}
+
+/* リスト */
+section ul li {
+    margin: 0.5em auto;
+    list-style-type: none;
+}
+
+section ul li span {
+    display: inline-block;
+    margin-right: 1em;
+    width: 40px;
+    border: thin solid #043c78;
+    text-align: center;
+}
+
+/* アーティクル */
+article {
+    margin: 0 auto;
+    padding: 3em;
+    max-width: 500px;
+    background-color: #fff;
+}
+
+/* アーティクル画像 */
+article img {
+    display: block;
+    margin: 0 auto 1em;
+    width: 50px;
+    height: auto;
+}
+
+/* アーティクル見出し */
+article h1 {
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: 'Noto Serif JP';
+}
+
+/* 段落 */
+article p,
+article .menu {
+    margin: 1em auto 1.5em;
+}
+
+/* メニュー */
+article .menu {
+    text-align: center;
+}
+
+article .menu li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+/* フッター */
+footer {
+    margin: 1em auto 2em;
+    background-color: #fff;
+}
+
+/* 重要事項 */
+strong {
+    font-weight: bold;
+    color: red;
+}
+
+/* アニメーション */
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* フォーム系 */
+textarea,
+input[type] {
+    -webkit-appearance: none;
+    padding: 0.2em 0.5em;
+    background-color: #043c78;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+textarea {
+    width: 200px;
+    height: 70px;
+}
+
+input[type=text] {
+    width: 80px;
+}
+
+input[type=submit] {
+    width: auto;
+}
+
+/* 横幅768px以上で読み込む */
+@media screen and (min-width:768px) {
+
+    /* フォントサイズ */
+    body {
+        background-size: 600px;
+        font-size: 14px;
+    }
+}
+
+/* 横幅1024px以上で読み込む */
+@media screen and (min-width:1024px) {
+
+    a:hover {
+        transition: .5s;
+        text-shadow: 0 0 3px #043c78;
+        color: transparent;
+    }
+
+    /*フレックスボックス */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        flex-basis: 48%;
+    }
+}
+   body {
+  -webkit-text-size-adjust: 100%;
+}
+
+video {
+	width:100%;
+	height:120px;
+	border:1px solid #ccc;
+	object-fit:initial;  /*WebKit用（追加されるテキストボックスが収まるように）*/
+    }
+video::cue {  /*疑似要素「::cue」を使います*/
+	font-size:20px; /*デフォルトのフォントサイズだと小さいので大きくしました*/
+    }
+::cue(v[voice=fs]) {
+   color: yellow;
+}
+::cue(v[voice=gj]) {
+   color: purple;
+}
