@@ -1,5 +1,18 @@
 WEBVTT
 
+STYLE
+::cue {
+  background-image: linear-gradient(to bottom, dimgray, lightgray);
+  color: papayawhip;
+  font-size:20px; /*デフォルトのフォントサイズだと小さいので大きくしました*/
+}
+::cue(v[voice=fs]) {
+   color: yellow;
+}
+::cue(v[voice=gj]) {
+   color: purple;
+}
+
 00:00:00,260 --> 00:00:07,300
 -聪明啊 救命
 -看看我复盘鱼粉后发现了什么不得了的事情
