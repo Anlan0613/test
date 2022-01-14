@@ -300,6 +300,7 @@ text-shadow:
 	0 1px 0 black,
 	-1px 0 0 black,
 	0 -1px 0 black
+text-align: center;
 font-size:20px; /*デフォルトのフォントサイズだと小さいので大きくしました*/
     }
 video::cue(v[voice=fs]) {
