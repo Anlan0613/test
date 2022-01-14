@@ -295,6 +295,11 @@ video {
 video::cue {  /*疑似要素「::cue」を使います*/
 background-color:rgba( 204, 255, 204, 0.55 );
 color:white;
+text-shadow:
+	1px 0 0 black,
+	0 1px 0 black,
+	-1px 0 0 black,
+	0 -1px 0 black
 font-size:20px; /*デフォルトのフォントサイズだと小さいので大きくしました*/
     }
 video::cue(v[voice=fs]) {
@@ -303,3 +308,4 @@ video::cue(v[voice=fs]) {
 video::cue(v[voice=gj]) {
    color: purple;
 }
+
