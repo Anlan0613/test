@@ -285,6 +285,7 @@ input[type=submit] {
   -webkit-text-size-adjust: 100%;
 }
 
+
 video {
 	width:100%;
 	height:120px;
@@ -292,11 +293,13 @@ video {
 	object-fit:initial;  /*WebKit用（追加されるテキストボックスが収まるように）*/
     }
 video::cue {  /*疑似要素「::cue」を使います*/
-	font-size:20px; /*デフォルトのフォントサイズだと小さいので大きくしました*/
+background-color:rgba( 204, 255, 204, 0.55 );
+color:white;
+font-size:20px; /*デフォルトのフォントサイズだと小さいので大きくしました*/
     }
-::cue(v[voice=fs]) {
+video::cue(v[voice=fs]) {
    color: yellow;
 }
-::cue(v[voice=gj]) {
+video::cue(v[voice=gj]) {
    color: purple;
 }
